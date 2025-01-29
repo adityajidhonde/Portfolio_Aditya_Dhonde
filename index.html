@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aditya Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Bhai+2&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/cedddeb9db.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js" integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    </head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav id="navbar">
+                <h1 class="logo">Aditya Dhonde</h1>
+                <ul id="sidemenu">
+                    <li><a href="#contact">CV</a></li>
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Achievements</a></li>
+                    <li><a href="#portfolio">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-regular fa-circle-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <h1><span>Aditya</span> Dhonde <br></h1>
+                <p>COMPUTER SCIENCE   <br></p>
+                <!-- <p>Languages : English | Hindi | Marathi</p> -->
+            </div>
+        </div>
+    </div>
+    <!-- ----------------------about--------------------- -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/pngegg.png" alt="">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>Hi, I am pursuing my Master's from New Jersey Institute of Technology in Computer Science department. <br>
+                        In 2022, I graduated with a B.Tech degree from Computer Science and Engineering from Jawaharlal Nehru 
+                        Engineering College, India with a CGPA of 8.6/10. <br> I am interested in Web-Development, Data Structure 
+                        and Algorithm, Android App development and Big Data.  
+                         </p>
+
+                          <div class="tab-titles">
+                            <p class="tab-links  active-link" onclick="opentab('education')">Education</p>
+                            <p class="tab-links" onclick="opentab('skills')">Skills</p>
+                            <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                            
+                          </div>
+                          
+                          <div class="tab-contents  active-tab" id="education">
+                            <ul>
+                                <li><span>New Jersey Institute of Technology</span><br>M.S in Computer Science</li>
+                                <li><span>Jawaharlal Nehru Engineering College</span><br>B.Tech in Computer Science and Engineering | CGPA-8.5</li>
+
+                            </ul>
+                          </div>
+                          <div class="tab-contents" id="skills">
+                            <ul>
+                                <li><span>Languages</span><br>C/C++ | Python | SQL | Java | JavaScript</li>
+                                <li><span>Frameworks</span><br>Node.js - Express | Flask</li>
+                                <li><span>Miscellaneous</span><br>AWS | Google Cloud Platform | MongoDB | MySQL | Android Security | Google Play Policies</li>
+                            </ul>
+                          </div>
+                          <div class="tab-contents" id="experience">
+                            <ul>
+                                <li><span>1. Accenture: <br> Specialist- Mooseforce Technical(Nov 22 - July 23)</span><br>Successfully prevented Mobile Unwanted Software (MUwS) by reverse engineering Android apps and data collection</li>
+                                <li><span>2. Cognizant: <br> Project Intern(Jan 22 - May 22)</span><br>Analyzed multiple databases and formats of Big Data for ETL process to maximize efficiency by reducing data breach</li>
+                                <li><span>3. CodeAppMedia: <br> Project Intern(Oct 21 - Dec 21)</span><br>Developed an Online compiler with teaching assistance and data security features</li>
+                            </ul>
+                          </div>
+                          
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- -----------------------------services------------------------------------------- -->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">ACHIEVEMENTS</h1>
+            <div class="services-list">
+                <div class="im1">
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Coding Event</h2>
+                    <p>Top 100 All India Rank in Developer Student Club’s ‘.get .set .code’ coding competition held by Codechef</p>
+                    <!-- <a href="#">learn more</a> -->
+                </div>
+                <div class="im2">
+                    <i class="fa-solid fa-crop"></i>
+                    <h2>Corporate Events</h2>
+                    <p>Improved subsequent global ranking in competitive coding by Google Kickstart 
+                        (Top 25% –> Top 10% –> Top 2%) <br> Qualified Google Codejam with a global rank of 7844 
+                        among 156880 participants i.e. Top 5%ile global level</p>
+                    <!-- <a href="#">learn more</a> -->
+                </div>
+                <div class="im3">
+                    <i class="fa-brands fa-app-store"></i>
+                    <h2>Project</h2>
+                    <p>Best Project Winner in the TechFest of JNEC ( ANKUR 1.0) by building a functional Automated Wire Cutting Machine</p>
+                    <a href="https://youtu.be/UVN4jyiLGo0">Demo</a>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+
+    <!-- --------------------------portfolio----------------- -->
+
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">PROJECTS</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/markus-spiske-MgtHZ4zlC1U-unsplash.jpg" alt="">
+                    <div class="layer">
+                        <h3>Website-Compiler-project</h3>
+                        <p>This website compiles code by interacting between two servers securely using web-authentication
+                           <br> <br> Technology used :- Node.JS, MongoDB, Websocket.io, Express, HTML, CSS, Javascript, Compilex, bcrypt, etc.
+                        </p>
+                        <a href="https://github.com/adityajidhonde/Website-Compiler-project"><i class="fa-solid fa-link"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/Dancing_Girl_in_Dark_High_Resolution_Image.jpg" alt="">
+                    <div class="layer">
+                        <h3>Dance-Website</h3>
+                        <p>This was my first MEN stack project which was used by the client live and it was deployed on AWS.
+                            <br>Technology used :- Node.JS, MongoDB, Pug Template, Express, HTML, CSS, Javascript, AWS, Putty, etc.
+                        </p>
+                        <a href="https://github.com/adityajidhonde/Dance-website"><i class="fa-solid fa-link"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/billing.jpg" alt="">
+                    <div class="layer">
+                        <h3>MySQL-ebilling-system</h3>
+                        <p>Create a repurposable E-billing System for efficient business ops management and data analytics for Business Intelligence 
+                            <br> Technology used :- MySQL, Xampp, Apache server, MariaDB, PHP, HTML, CSS, Javascript.
+                        </p>
+                        <a href="https://github.com/adityajidhonde/MySQL-ebilling-system"><i class="fa-solid fa-link"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/beuty.jpg" alt="">
+                    <div class="layer">
+                        <h3>Lavanya-beauty-solutions</h3>
+                        <p>
+                            Successfully built frontend, backend, and database for a corporate website increasing customer outreach by +50%
+                            <br>Technology used :- Node.JS, MongoDB, Pug Template, Express, HTML, CSS, Javascript, AWS, Putty, etc.</p>
+                            <a href="https://github.com/adityajidhonde/Lavanya-beauty-solutions"><i class="fa-solid fa-link"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/chat.jpg" alt="">
+                    <div class="layer">
+                        <h3>Chat-Website</h3>
+                        <p>Build chat website using Websocket.io to communicate between servers at same time.
+                            <br> Technology used :- HTML, CSS, Javascript, Web-socket.io.
+                        </p>
+                        <a href="https://github.com/adityajidhonde/Chat-Website"><i class="fa-solid fa-link"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/gym.jpg" alt="">
+                    <div class="layer">
+                        <h3>Gym Website</h3>
+                        <p>Created frontend for Gym website to attract more audience and increase customer outreach
+                            <br>Technology used :- HTML, CSS, Javascript.
+                        </p>
+                        <a href="https://github.com/adityajidhonde/Projects/tree/master/Gym_website%20front%20end"><i class="fa-solid fa-link"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/netflixteaser.png" alt="">
+                    <div class="layer">
+                        <h3>JoyFlix</h3>
+                        <p>The platform allows for seamless navigation and content management, ensuring a user-friendly experience for updating and deleting entries with efficiency.
+                        </p>
+                        <a href="https://github.com/adityajidhonde/joyflix/tree/master"><i class="fa-solid fa-link"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/feedback-background-concept-260nw-505469695.avif" alt="">
+                    <div class="layer">
+                        <h3>FeedbackGPT</h3>
+                        <p>
+                            Creating resumes and cover letters, in the method can be quite time consuming and subjective which many job seekers find appealing. Hence it's crucial to make our resume stand out.
+
+                        </p>
+                        <a href="https://github.com/adityajidhonde/FeedbackGPT"><i class="fa-solid fa-link"></i></a>
+                    </div>
+                </div>
+            </div>
+            <!-- <a class="btn">See more</a> -->
+        </div>
+    </div>
+<!-- --------------------------contact-------------------------- -->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-regular fa-paper-plane"></i> agdhonde00@gmail.com</p>
+                    <p><i class="fa-solid fa-phone"></i> (+1) 862 298 1892</p>
+                    <div class="social-icons">
+                        <a href="https://www.facebook.com/aditya.dhonde.52?mibextid=ZbWKwL"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="https://twitter.com/AdityaDhonde1"><i class="fa-brands fa-square-twitter"></i></a>
+                        <a href="https://github.com/adityajidhonde"><i class="fa-brands fa-github"></i></a>
+                        <a href="www.linkedin.com/in/aditya-dhonde"><i class="fa-brands fa-linkedin"></i></a>
+                    </div>
+                    <a href="./images/Aditya_Dhonde_Resume_removed.pdf" download class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="your name" required>
+                        <input type="email" name="Email" placeholder="your mail" required>
+                        <textarea name="Message" id=""  rows="6" placeholder="your message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright @2023 Aditya Dhonde. Powered by GitHub</p>
+        </div>
+    </div>
+
+
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+        function opentab(tabname){
+                for(tablink of tablinks){
+                    tablink.classList.remove("active-link");
+                }
+                for(tabcontent of tabcontents){
+                    tabcontent.classList.remove("active-tab");
+                }
+                event.currentTarget.classList.add("active-link");
+                document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
+
+    <script>
+        var sidemenu = document.getElementById("sidemenu");
+        
+        function openmenu(){
+            sidemenu.style.right = "0";
+        }
+        function closemenu(){
+            sidemenu.style.right = "-200px";
+        }
+    </script>
+  
+  <script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbxWbkbzwel7anxy9jzNMtpI_WYu49o2XALBCvvAUoXsJGRlBReiv_cd9vtnAyYYT_sxzw/exec'
+    const form = document.forms['submit-to-google-sheet']
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => console.log('Success!', response))
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+
+      <!-- -----------------------------services------------------------------------------- -->
+   
+    <script>
+        window.onscroll = function() {myFunction()};
+
+        var navbar = document.getElementById("navbar");
+        var sticky = navbar.offsetTop;
+
+        function myFunction() {
+            if (window.pageYOffset >= sticky) {
+            navbar.classList.add("sticky")
+            } else {
+            navbar.classList.remove("sticky");
+            }
+        }
+    </script>
+</body>
+</html>
